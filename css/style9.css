@@ -1,0 +1,394 @@
+@font-face {
+    font-family: 'NanumSquareNeoLight';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoExtraBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoHeavy';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoVariable';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.ttf) format("truetype");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    min-width: 1320px;
+    background-color: #fff;
+}
+
+/* 헤더 */
+.header {
+    width: 100%;
+    background-color: #FFFCEE;
+    z-index: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header_in {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_in img {
+    display: block;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #3b72a8;
+}
+
+.nav>li>a {
+    display: block;
+    padding: 30px;
+    position: relative;
+}
+
+/* 서브메뉴 꾸미기 */
+.sub {
+    position: absolute;
+    width: 100%;
+    display: none;
+    z-index: 100;
+}
+
+.nav>li {
+    position: relative;
+}
+
+.sub a {
+    font-size: 17px;
+    font-family: 'NanumSquareNeo';
+    font-weight: 700;
+    display: block;
+    background-color: #3b72a8;
+    color: #FFFCEE;
+    padding-top: 30px;
+    text-align: center;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+
+}
+
+
+.sub a:hover {
+    color: #fff4bb;
+}
+
+
+
+/* 서브메뉴 배경 꾸미기 */
+.nav .sub_bg {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: #3b72a8;
+    left: 0;
+    top: 92px;
+    display: none;
+}
+
+.solid {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    height: 7px;
+    background: #fff0a5;
+    transform: scaleX(0);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav>li>a:hover .solid {
+    transform: scaleX(1);
+}
+
+
+
+/* 서브메뉴 보이게 하기 
+.nav li:hover .sub{
+    display: block;
+}*/
+
+
+
+/* 상단배너 */
+.hyperbanner img {
+    margin-top: 92px;
+    width: 100%;
+    display: block;
+    min-width: 1320px;
+}
+
+
+
+
+/* 메뉴박스 */
+
+.menubox {
+    width: 1320px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.menubox h1 {
+    text-align: center;
+    padding: 130px 0 30px 0;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    color: #3b72a8;
+    font-size: 36px;
+}
+
+
+.highlight2 {
+    background: linear-gradient(to right, #3b72a8 50%, transparent 50%) 100% 0;
+    background-size: 200%;
+    transition: all 1s;
+}
+
+.on2 {
+    background-position-x: 0;
+    color: #FFFCEE;
+    padding: 0 7px;
+}
+
+
+
+
+
+
+/* 커뮤니티 */
+.community{
+    font-family: 'NanumSquareNeo';
+    color: #3c3c3c;
+}
+
+.c_in1{
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.n_top, .I_top{
+    border-bottom: 1px solid #777777;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.c_in2 b{
+    font-family: 'NanumSquareNeo';
+    font-size: 16px;
+    display: block;
+    float: right;
+    margin-right: 160px;
+}
+
+.community h3{
+    font-family: 'NanumSquareNeoExtraBold';
+}
+
+.q_a span{
+    display: block;
+    float: right;
+    margin-right: 100px;
+    font-family: 'NanumSquareNeobold';
+}
+
+
+
+
+
+
+
+/* 자주 묻는 질문 Q&A */
+.community2{
+    width: 100%;
+    color: #3c3c3c;
+}
+
+.c_in2{
+    width: 1320px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.c_in2 h3{
+    padding: 30px 0 30px 15px;
+    font-family: 'NanumSquareNeoExtraBold';
+    background: #fffae0;
+    border-top: 1px solid #CCC;
+}
+
+
+.q_a {
+    width: 1320px;
+    margin: auto;
+    font-family: 'NanumSquareNeo';
+    border-top: 1px solid #CCC;
+}
+
+.q_a li {
+    width: 100%;
+    border-bottom: 1px solid #CCC;
+}
+
+.q_a li a {
+    display: block;
+    padding: 30px;
+    background: url(../images/sub/sub08_q&a_icon_down.png) no-repeat 95% 50%;
+}
+
+.q_a li:hover a {
+    font-weight: bold;
+ 
+}
+
+.q_a li.on a {
+    font-weight: bold;
+    background-color: #e6eeff;
+    background: #f0f0f0 url(../images/sub/sub08_q&a_icon_up.png) no-repeat 95% 50%;
+    border-bottom: 1px solid #CCC;
+}
+
+.q_a li:last-child a {
+    border-top: 0;
+}
+
+.q_a li div {
+    width: 100%;
+    border-top: 0;
+    padding: 40px 20px;
+    display: none;
+}
+
+
+
+
+
+
+
+/* 내용경계선 */
+.boundary {
+    display: block;
+    width: 100%;
+    min-width: 1320px;
+}
+
+/* 푸터 */
+.footer {
+    background: #FFFCEE;
+}
+
+.footer_in {
+    margin: auto;
+    width: 1320px;
+    padding: 100px 0 90px 0;
+    display: flex;
+}
+
+.footer p,
+.footer a {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 14px;
+    color: #3b72a8;
+}
+
+.footer_left img {
+    float: left;
+    margin-right: 59px;
+}
+
+.footer_left p {
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.footer_right li {
+    float: left;
+    margin-left: 30px;
+}
+
+.footer_right {
+    margin-left: 361px;
+}
+
+.footer_right img {
+    float: right;
+    padding-top: 30px;
+}
+
+.footer_right a:hover {
+    color: #4891da;
+}
+
+.spin2 {
+    animation: circle 4.5s infinite linear;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

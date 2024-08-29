@@ -1,0 +1,863 @@
+@font-face {
+    font-family: 'NanumSquareNeoLight';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoExtraBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoHeavy';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoVariable';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.ttf) format("truetype");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    min-width: 1320px;
+}
+
+/* 헤더 */
+.header {
+    width: 100%;
+    background-color: #FFFCEE;
+    z-index: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header_in {
+    width: 1320px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_in img {
+    display: block;
+}
+
+.nav {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #3b72a8;
+}
+
+.nav>li>a {
+    display: block;
+    padding: 30px;
+    position: relative;
+}
+
+/* 서브메뉴 꾸미기 */
+.sub {
+    position: absolute;
+    width: 100%;
+    display: none;
+    z-index: 100;
+}
+
+.nav>li {
+    position: relative;
+}
+
+.sub a {
+    font-size: 17px;
+    font-family: 'NanumSquareNeo';
+    font-weight: 700;
+    display: block;
+    background-color: #3b72a8;
+    color: #FFFCEE;
+    padding-top: 30px;
+    text-align: center;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+
+}
+
+
+.sub a:hover {
+    color: #fff4bb;
+}
+
+
+
+/* 서브메뉴 배경 꾸미기 */
+.nav .sub_bg {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: #3b72a8;
+    left: 0;
+    top: 92px;
+    display: none;
+}
+
+.solid {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    height: 7px;
+    background: #fff0a5;
+    transform: scaleX(0);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav>li>a:hover .solid {
+    transform: scaleX(1);
+}
+
+
+
+/* 서브메뉴 보이게 하기 
+.nav li:hover .sub{
+    display: block;
+}*/
+
+
+/* 메인배너 */
+.slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 88px;
+}
+
+
+.slide .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.slide .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.slide .swiper-pagination-bullet {
+    background: #3b72a8;
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.slide .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+/* 블릿버튼 위치 */
+.slide .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 15px;
+}
+
+
+
+/* 베스트메뉴 */
+
+.best_in {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    padding-top: 184px;
+}
+
+
+h1 {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    color: #3b72a8;
+    font-size: 36px;
+}
+
+.best p {
+    font-family: 'NanumSquareNeobold';
+    font-size: 18px;
+    padding-bottom: 97px;
+}
+
+.best_in h1::after {
+    content: '';
+    margin: 27px auto;
+    display: block;
+    width: 44px;
+    height: 1px;
+    background-color: #3b72a8;
+}
+
+.highlight2 {
+    background: linear-gradient(to right, #3b72a8 50%, transparent 50%) 100% 0;
+    background-size: 200%;
+    transition: all 1s;
+}
+
+.on2 {
+    background-position-x: 0;
+    color: #FFFCEE;
+    padding: 0 7px;
+}
+
+
+/* 갤러리 꾸미기 */
+.gallery {
+    width: 1320px;
+    margin: 10px auto;
+    padding: 0 50px 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.gallery_inner {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.gallery .swiper-slide img {
+    display: block;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.bg {
+    background: url(../images/circle_bg.png) no-repeat center;
+}
+
+.gallery .swiper-slide {
+    color: black;
+    text-align: center;
+}
+
+.gallery .swiper-slide h2 {
+    font-family: 'NanumSquareNeobold';
+    font-weight: 800;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.gallery .swiper-slide h4 {
+    font-family: 'NanumSquareNeobold';
+    line-height: 1.7;
+    font-size: 16px;
+    font-weight: 300;
+    color: #777777;
+}
+
+.gallery .swiper-slide:hover .bg img {
+    transform: translateY(-25px);
+}
+
+.itemlink {
+    display: inline-block;
+    margin: 25px auto 100px;
+    padding: 10px 30px;
+    font-family: 'NanumSquareNeo';
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    border: 3px solid #DBDBDB;
+    color: #434343;
+}
+
+/* /* 이동버튼 이미지로 바꾸기 */
+.gallery .swiper-button-prev,
+.gallery .swiper-button-next {
+    width: 59px;
+    height: 50px;
+    top: 500px;
+}
+
+.gallery .swiper-button-prev:after,
+.gallery .swiper-button-next:after {
+    content: '';
+    display: block;
+    width: 58px;
+    height: 48px;
+}
+
+.gallery .swiper-button-prev:after {
+    background: url(../images/button1.png);
+}
+
+.gallery .swiper-button-next:after {
+    background: url(../images/button2.png);
+}
+
+.gallery .swiper-horizontal>.swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal {
+    top: auto;
+    bottom: 0;
+    height: 3px;
+}
+
+.gallery .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #3b72a8;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transform-origin: left top;
+}
+
+.gallery .swiper-horizontal>.swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal {
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -194px);
+    width: 1100px;
+
+}
+
+.more {
+    display: inline-block;
+    margin: 25px auto;
+    border: 5px solid #3b72a8;
+    padding: 10px 30px;
+    font-family: "Dela Gothic One", sans-serif;
+    text-align: center;
+    color: #3b72a8;
+    transform: translate(550px);
+}
+
+.more:hover{
+    background: #3b72a8;
+    color: #fff;
+}
+
+
+.itemlink:hover {
+    background: #3b72a8;
+    border: 3px solid #3b72a8;
+    color: #fff;
+}
+
+
+/* 자세히보기 팝업창 */
+.popup_con {
+    margin-bottom: 50%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+}
+
+
+.pop_inner {
+    padding: 30px 20px;
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pop_img {
+    padding: 0 70px;
+    align-items: center;
+}
+
+.pop_img img {
+    margin-top: 70px;
+    transform: scale(1.2);
+    transform: translate(-15px, -10px);
+}
+
+.pop_detail {
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+.popup_con .pop_inner .pop_detail h3.new::after {
+    font-family: "Dela Gothic One", sans-serif;
+    content: "new";
+    display: inline-block;
+    margin-left: 10px;
+    width: 45px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 200;
+    background-color: #3b72a8;
+    border-radius: 13px;
+    vertical-align: 4px;
+}
+
+.pop_detail h3 {
+    font-size: 24px;
+    font-family: 'NanumSquareNeoHeavy';
+}
+
+.pop_detail p {
+    font-weight: 200;
+    padding: 20px 0;
+    font-family: 'NanumSquareNeo';
+}
+
+.sizecon {
+    display: flex;
+}
+
+.sizecon dl {
+    display: inline-block;
+    margin: 0 40px 30px 0;
+    overflow: hidden;
+}
+
+.sizecon dl dt {
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 200;
+    border: 1px solid #3b72a8;
+    border-radius: 16px;
+    font-family: 'NanumSquareNeo';
+}
+
+.sizecon dl dd {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #3b72a8;
+    font-family: 'NanumSquareNeo';
+}
+
+table {
+    width: 100%;
+    font-size: 12px;
+    border-collapse: collapse;
+}
+
+.tablestyle {
+    margin-bottom: 30px;
+    padding: 2px 0;
+    width: 100%;
+    
+}
+
+th {
+    text-align: center;
+    width: 15%;
+    height: 36px;
+    font-weight: 300;
+    background-color: #3b72a8;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    border-top: #fff;
+    font-family: 'NanumSquareNeobold';
+}
+
+td {
+    text-align: center;
+    width: 15%;
+    height: 36px;
+    font-weight: 300;
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+    font-family: 'NanumSquareNeo';
+}
+
+.closebtn {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.itemInfo h4{
+    font-family: 'NanumSquareNeoExtraBold';
+}
+
+
+
+
+/* 문구 슬라이드 */
+/* 흘러가는 슬라이드 꾸미기 */
+
+.flowslide {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 140px;
+    margin-bottom: 200px;
+    background: url(../images/pattern.jpg) repeat-x, url(../images/pattern.jpg) repeat-x 0 bottom;
+}
+
+.flowslide_inner {
+    width: 2300px;
+}
+
+.flowslide .swiper-wrapper {
+    transition-timing-function: linear;
+}
+
+.flowslide_inner .swiper-slide {
+    padding: 90px 0 110px;
+
+}
+
+.flowslide_inner p {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 100px;
+    color: #3b72a8;
+
+}
+
+
+
+/* 메인 브랜드스토리 */
+.brand_banner {
+    display: flex;
+    margin-bottom: 220px;
+}
+
+.brand_txt {
+    width: 50%;
+    background-color: #FFFCEE;
+    padding: 89px 0 0 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.brand_txt h2 {
+    color: #363636;
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 4vw;
+    font-weight: 400;
+    line-height: 120%;
+    padding: 30px 0 65px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.brand_txt h1 {
+    color: #3b72a8;
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.brand_txt h1::after {
+    content: '';
+    display: block;
+    width: 44px;
+    height: 1px;
+    background-color: #3b72a8;
+    margin: 15px 0;
+}
+
+.brand_txt p {
+    font-family: 'NanumSquareNeobold';
+    line-height: 35px;
+    font-size: 19px;
+    position: relative;
+    z-index: 2;
+}
+
+.brand_txt img {
+    display: flex;
+
+}
+
+.brand_txt img {
+    display: block;
+}
+
+.brand_img {
+    overflow: hidden;
+    width: 50%;
+    background: url(../images/sign.png) no-repeat center;
+    transition: all 0.5s ease;
+    background-size: auto 100%;
+}
+
+.brand_img:hover {
+   background-size: auto 113%;
+    content: '';
+    transition: all 0.5s ease;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spin {
+    animation: circle 4.5s infinite linear;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+
+.circle {
+    width: 3.8rem;
+    aspect-ratio: 1 / 1;
+    background: #3b72a8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    font-family: "Dela Gothic One", sans-serif;
+    color: #FFFCEE;
+    text-indent: 0.9rem;
+    transition: all ease 0.3s;
+}
+
+.viewmore {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    line-height: 1;
+    color: #3b72a8;
+    font-family: "Dela Gothic One", sans-serif;
+    transition: all ease 0.3s;
+}
+
+
+
+/* 미니광고배너 */
+
+.ad_banner {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ad_banner img {
+    display: block;
+    border-radius: 25px;
+}
+
+.ad_banner>div {
+    position: relative;
+}
+
+.black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000005d;
+    opacity: 0;
+    border-radius: 25px;
+}
+
+.ad_banner>div:hover .black {
+    opacity: 1;
+}
+
+.black p {
+    font-family: 'NanumSquareNeobold';
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 318px;
+}
+
+
+
+
+/* sns */
+.sns {
+    padding: 0 30px;
+}
+
+.sns p {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 100px;
+    color: #363636;
+    line-height: 95px;
+}
+
+.sns h4 {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 60px;
+    color: #3b72a8;
+    font-weight: normal;
+    margin-right: auto;
+}
+
+.sns_img1 {
+    padding: 60px 0 10px 0;
+    display: flex;
+}
+
+.sns_img2 {
+    box-sizing: border-box;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: right;
+}
+
+.mar {
+    margin: 0 0.5%;
+}
+
+.sns img {
+    width: 100%;
+    transition: all 0.5s ease;
+    display: block;
+}
+
+.sns img:hover {
+    transform: scale(1.09);
+}
+
+.sns_hidden {
+    overflow: hidden;
+    width: 24.62%;
+}
+
+
+
+
+/* 이벤트배너 */
+.eventbanner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.eventbanner img {
+    display: block;
+    width: 100%;
+    min-width: 1320px;
+}
+
+
+
+
+/* 푸터 */
+.footer {
+    background: #FFFCEE;
+}
+
+.footer_in {
+    margin: auto;
+    width: 1320px;
+    padding: 100px 0 90px 0;
+    display: flex;
+}
+
+.footer p,
+.footer a {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 14px;
+    color: #3b72a8;
+}
+
+.footer_left img {
+    float: left;
+    margin-right: 59px;
+}
+
+.footer_left p {
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.footer_right li {
+    float: left;
+    margin-left: 30px;
+}
+
+.footer_right {
+    margin-left: 361px;
+}
+
+.footer_right img {
+    float: right;
+    padding-top: 30px;
+}
+
+.footer_right a:hover{
+    color: #4891da;
+}
+
+.spin2 {
+    animation: circle 4.5s infinite linear;
+}

@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
+	<link href="./images/favicon.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+    
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+
+	<!-- 웹폰트연결 -->
+
+
+	<!-- 슬라이드 css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+	<link rel="stylesheet" href="./css/index.css">
+	<!-- css연결 -->
+
+	<!-- aos css -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<title>Sweet&Salty</title>
+</head>
+
+<body>
+	<!-- 헤더 -->
+	<div class="header">
+		<div class="header_in">
+			<a href="./index.html" class=""><img src="./images/header_logo.png" alt="스윗앤솔티"></a>
+			<ul class="nav">
+				<li><a href="./sub1.html">Brand<div class="solid"></div></a>
+					<ul class="sub">
+						<li><a href="./sub1.html">브랜드 소개</a></li>
+					</ul>
+				</li>
+				<li><a href="./sub2.html">Menu<div class="solid"></div></a>
+					<ul class="sub">
+						<li><a href="./sub2.html">매장 메뉴</a></li>
+						<li><a href="./sub3.html">MD 메뉴</a></li>
+					</ul></li>
+				<li><a href="./sub7.html">Event<div class="solid"></div></a>
+					<ul class="sub">
+						<li><a href="./sub7.html">이벤트</a></li>
+					</ul></li>
+				<li><a href="./sub8.html">Community<div class="solid"></div></a>
+					<ul class="sub">
+						<li><a href="./sub9.html">공지사항</a></li>
+						<li><a href="./sub10.html">자주 묻는 질문</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><img src="./images/header_login_icon.png" alt="로그인"></a></li>
+				<li><a href="#"><img src="./images/header_join_icon.png" alt="회원가입"></a></li>
+				<li><a href="#"><img src="./images/header_search_icon.png" alt="검색돋보기"></a></li>
+				<li class="sub_bg"></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<!-- 메인배너 -->
+
+	<!-- 구문 -->
+	<div class="swiper-container slide">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<a href="./sub7.html"><img src="images/mainbanner1.jpg" alt="배너1"></a>
+			</div>
+			<div class="swiper-slide">
+				<a href="./sub7.html"><img src="images/mainbanner2.jpg" alt="배너2"></a>
+			</div>
+			<div class="swiper-slide">
+				<a href="./sub7.html"><img src="images/mainbanner3.jpg" alt="배너3"></a>
+			</div>
+		</div>
+		<!-- 블릿 버튼 -->
+		<div class="swiper-pagination"></div>
+	</div>
+
+	<!-- js -->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script>
+		$(function () {
+			var swiper = new Swiper('.slide ', {
+				speed: 3000,//버튼을 슬라이드가 넘어가는 시간
+				autoplay: {
+					delay: 3000,//자동으로 넘어가기 전 머무르는 시간
+					disableOnInteraction: false,
+				},
+				loop: true,//슬라이드 무한반복
+				pagination: {//블릿 버튼
+					el: '.slide .swiper-pagination',
+					clickable: true,
+				},
+			});
+		});
+
+
+	</script>
+
+	<div class="best">
+		<div class="best_in">
+			<h1><span class="highlight2">Best Menu</span></h1>
+			<p>스윗앤솔티의 다양한 디저트와 음료</p>
+		</div>
+	</div>
+
+	<!-- 베스트갤러리 -->
+	<!-- 구문 -->
+	<div class="swiper-container gallery">
+		<div class="gallery_inner">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+						<div class="bg"><img src="./images/americano.png" alt="갤러리1"></div>
+						<h2>아메리카노</h2>
+						<h4>ICE/HOT</h4>
+						<a href="#none" class="itemlink itemlink1">자세히보기</a>
+				</div>
+				<div class="swiper-slide">
+						<div class="bg"><img src="./images/cafelatte.png" alt="갤러리2"></div>
+						<h2>카페라떼</h2>
+						<h4>ICE/HOT</h4>
+						<a href="#none" class="itemlink itemlink2">자세히보기</a>
+				</div>
+				<div class="swiper-slide">
+						<div class="bg"><img src="./images/vanilalatte.png" alt="갤러리3"></div>
+						<h2>바닐라라떼</h2>
+						<h4>ICE/HOT</h4>
+						<a href="#none" class="itemlink itemlink3">자세히보기</a>
+				</div>
+				<div class="swiper-slide">
+						<div class="bg"><img src="./images/saltedcaramellatte.png" alt="갤러리4"></div>
+						<h2>솔티드카라멜라떼</h2>
+						<h4>ICE/HOT</h4>
+						<a href="#none" class="itemlink itemlink4">자세히보기</a>
+				</div>
+				<div class="swiper-slide">
+						<div class="bg"><img src="./images/icetea.png" alt="갤러리5"></div>
+						<h2>복숭아아이스티</h2>
+						<h4>ICE ONLY</h4>
+						<a href="#none" class="itemlink itemlink5">자세히보기</a>
+				</div>
+				<div class="swiper-slide">
+						<div class="bg"><img src="./images/saltedbread.png" alt="갤러리6"></div>
+						<h2>소금빵</h2>
+						<h4>DESSERT</h4>
+						<a href="#none" class="itemlink itemlink6">자세히보기</a>
+				</div>
+				<div class="swiper-slide">
+						<div class="bg"><img src="./images/castella.png" alt="갤러리7"></div>
+						<h2>우유크림카스테라</h2>
+						<h4>DESSERT</h4>
+						<a href="#none" class="itemlink itemlink7">자세히보기</a>
+				</div>
+				<div class="swiper-slide">
+						<div class="bg"><img src="./images/macaron.png" alt="갤러리8"></div>
+						<h2>솔티드카라멜마카롱</h2>
+						<h4>DESSERT</h4>
+						<a href="#none" class="itemlink itemlink8">자세히보기</a>
+				</div>
+			</div>
+			<!-- 블릿 버튼 -->
+			<div class="swiper-pagination"></div>
+			<!-- 화살표 버튼 -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+
+			<a href="./sub2.html" class="more">MORE</a>
+
+		</div>
+
+	</div>
+
+	<!-- 아메리카노 자세히보기 팝업 -->
+	<div class="popup_con pop1">
+        <div class="pop_inner">
+            <a href="#none" class="closebtn"><img src="./images/ico_close.png" alt="#none"></a>
+            <div class="pop_img">
+                <img src="./images/sub/sub02_menu1.png" alt="아메리카노">
+            </div>
+            <div class="pop_detail">
+                <h3 class="new">아메리카노</h3>
+                <p>유기농 100% 아라비카 100% 원두를 사용해 더욱 맛있어진 아메리카노</p>
+                <div class="sizecon">
+                    <dl>
+                        <dt>기본</dt>
+                        <dd>1,800원</dd>
+                    </dl>
+                    <dl>
+                        <dt>빅사이즈</dt>
+                        <dd>2,300원</dd>
+                    </dl>
+                </div>
+                <div class="itemInfo">
+                    <h4>제품영양정보</h4>
+                    <div class="tablestyle">
+                        <table>
+                            <tr>
+                                <th>영양정보</th>
+                                <th>기본</th>
+                                <th>빅사이즈</th>
+                                <th></th>
+                                <th>기본</th>
+                                <th>빅사이즈</th>
+                            </tr>
+                            <tr>
+                                <th>열량(kcal)</th>
+                                <td>10.9</td>
+                                <td>13.8</td>
+                                <th>나트륨(mg)</th>
+                                <td>18.6</td>
+                                <td>21.2</td>
+                            </tr>
+                            <tr>
+                                <th>포화지방(g)</th>
+                                <td>0.0</td>
+                                <td>0.0</td>
+                                <th>당류(g)</th>
+                                <td>0.0</td>
+                                <td>0.0</td>
+                            </tr>
+                            <tr>
+                                <th>단백질(g)</th>
+                                <td>0.6</td>
+                                <td>0.8</td>
+                                <th>카페인(mg)</th>
+                                <td>171.2</td>
+                                <td>203.5</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<!-- 카페라떼 자세히보기 팝업 -->
+	<div class="popup_con pop2">
+        <div class="pop_inner">
+            <a href="#none" class="closebtn"><img src="./images/ico_close.png" alt="#none"></a>
+            <div class="pop_img">
+                <img src="./images/sub/sub02_menu2.png" alt="카페라떼">
+            </div>
+            <div class="pop_detail">
+                <h3 class="new">카페라떼</h3>
+                <p>팔공티만의 에스프레소 블랜딩 원두와 고소한 우유가 어우러져 부드럽게 즐기는 카페라떼</p>
+                <div class="sizecon">
+                    <dl>
+                        <dt>기본</dt>
+                        <dd>3,200원</dd>
+                    </dl>
+                    <dl>
+                        <dt>빅사이즈</dt>
+                        <dd>4,200원</dd>
+                    </dl>
+                </div>
+                <div class="itemInfo">
+                    <h4>제품영양정보</h4>
+                    <div class="tablestyle">
+                        <table>
+                            <tr>
+                                <th>영양정보</th>
+                                <th>기본</th>
+                                <th>빅사이즈</th>
+                                <th></th>
+                                <th>기본</th>
+                                <th>빅사이즈</th>
+                            </tr>
+                            <tr>
+                                <th>열량(kcal)</th>
+								<td>115.9</td>
+								<td>188.8</td>
+                                <th>나트륨(mg)</th>
+								<td>93.6</td>
+                                <td>146.2</td>
+                            </tr>
+                            <tr>
+                                <th>포화지방(g)</th>
+								<td>3.8</td>
+								<td>6.3</td>
+                                <th>당류(g)</th>
+								<td>7.5</td>
+								<td>12.5</td>
+                            </tr>
+                            <tr>
+                                <th>단백질(g)</th>
+								<td>5.1</td>
+								<td>8.3</td>
+                                <th>카페인(mg)</th>
+                                <td>171.2</td>
+                                <td>203.5</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<!-- 바닐라라떼 자세히보기 팝업 -->
+	<div class="popup_con pop3">
+        <div class="pop_inner">
+            <a href="#none" class="closebtn"><img src="./images/ico_close.png" alt="#none"></a>
+            <div class="pop_img">
+                <img src="./images/sub/sub02_menu3.png" alt="바닐라라떼">
+            </div>
+            <div class="pop_detail">
+                <h3 class="new">바닐라라떼</h3>
+                <p>부드러운 라떼에 달달하고 고소한 바닐라를 가미한 라떼 음료</p>
+                <div class="sizecon">
+                    <dl>
+                        <dt>기본</dt>
+                        <dd>3,500원</dd>
+                    </dl>
+                    <dl>
+                        <dt>빅사이즈</dt>
+                        <dd>4,500원</dd>
+                    </dl>
+                </div>
+                <div class="itemInfo">
+                    <h4>제품영양정보</h4>
+                    <div class="tablestyle">
+                        <table>
+                            <tr>
+                                <th>영양정보</th>
+                                <th>기본</th>
+                                <th>빅사이즈</th>
+                                <th></th>
+                                <th>기본</th>
+                                <th>빅사이즈</th>
+                            </tr>
+                            <tr>
+                                <th>열량(kcal)</th>
+                                <td>172.3</td>
+								<td>315.6</td>
+                                <th>나트륨(mg)</th>
+								<td>83.8</td>
+								<td>136.6</td>
+                            </tr>
+                            <tr>
+                                <th>포화지방(g)</th>
+                                <td>3.3</td>
+                                <td>5.8</td>
+                                <th>당류(g)</th>
+								<td>23.4</td>
+								<td>45.3</td>
+                            </tr>
+                            <tr>
+                                <th>단백질(g)</th>
+								<td>4.5</td>
+								<td>7.7</td>
+                                <th>카페인(mg)</th>
+                                <td>171.2</td>
+                                <td>203.5</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<!-- 솔티드카라멜라떼 자세히보기 팝업 -->
+	<div class="popup_con pop4">
+        <div class="pop_inner">
+            <a href="#none" class="closebtn"><img src="./images/ico_close.png" alt="#none"></a>
+            <div class="pop_img">
+                <img src="./images/sub/sub02_menu4.png" alt="솔티드카라멜라떼">
+            </div>
+            <div class="pop_detail">
+                <h3 class="new">솔티드카라멜라떼</h3>
+                <p>달콤한 카라멜과 짭짤한 솔트가 섞여 진한 커피와 잘 어우러지는 라떼 음료</p>
+                <div class="sizecon">
+                    <dl>
+                        <dt>기본</dt>
+                        <dd>4,000원</dd>
+                    </dl>
+                    <dl>
+                        <dt>빅사이즈</dt>
+                        <dd>5,000원</dd>
+                    </dl>
+                </div>
+                <div class="itemInfo">
+                    <h4>제품영양정보</h4>
+                    <div class="tablestyle">
+                        <table>
+                            <tr>
+                                <th>영양정보</th>
+                                <th>기본</th>
+                                <th>빅사이즈</th>
+                                <th></th>
+                                <th>기본</th>
+                                <th>빅사이즈</th>
+                            </tr>
+                            <tr>
+                                <th>열량(kcal)</th>
+								<td>239.2</td>
+								<td>380.3</td>
+                                <th>나트륨(mg)</th>
+								<td>108.5</td>
+								<td>175.1</td>
+                            </tr>
+                            <tr>
+                                <th>포화지방(g)</th>
+								<td>3.0</td>
+								<td>5.5</td>
+                                <th>당류(g)</th>
+								<td>41.1</td>
+								<td>62.7</td>
+                            </tr>
+                            <tr>
+                                <th>단백질(g)</th>
+								<td>4.3</td>
+								<td>7.5</td>
+                                <th>카페인(mg)</th>
+                                <td>171.2</td>
+                                <td>203.5</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<!-- 아이스티 자세히보기 팝업 -->
+	<div class="popup_con pop5">
+        <div class="pop_inner">
+            <a href="#none" class="closebtn"><img src="./images/ico_close.png" alt="#none"></a>
+            <div class="pop_img">
+                <img src="./images/sub/sub02_menu8.png" alt="아이스티">
+            </div>
+            <div class="pop_detail">
+                <h3 class="new">복숭아아이스티</h3>
+                <p>새콤달콤한 복숭아 맛을 시원하게 즐길 수 있는 아이스티 음료</p>
+                <div class="sizecon">
+                    <dl>
+                        <dt>기본</dt>
+                        <dd>2,700원</dd>
+                    </dl>
+                    <dl>
+                        <dt>빅사이즈</dt>
+                        <dd>3,700원</dd>
+                    </dl>
+                </div>
+                <div class="itemInfo">
+                    <h4>제품영양정보</h4>
+                    <div class="tablestyle">
+                        <table>
+                            <tr>
+                                <th>영양정보</th>
+                                <th>기본</th>
+                                <th>빅사이즈</th>
+                                <th></th>
+                                <th>기본</th>
+                                <th>빅사이즈</th>
+                            </tr>
+                            <tr>
+                                <th>열량(kcal)</th>
+								<td>160.7</td>
+								<td>214.2</td>
+                                <th>나트륨(mg)</th>
+								<td>5.6</td>
+								<td>7.5</td>
+                            </tr>
+                            <tr>
+                                <th>포화지방(g)</th>
+								<td>0.0</td>
+								<td>0.1</td>
+                                <th>당류(g)</th>
+								<td>28.3</td>
+								<td>37.8</td>
+                            </tr>
+                            <tr>
+                                <th>단백질(g)</th>
+								<td>0.1</td>
+								<td>0.1</td>
+                                <th>카페인(mg)</th>
+								<td>0.0</td>
+								<td>0.0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+
+	<!-- 소금빵 자세히보기 팝업 -->
+	<div class="popup_con pop6">
+        <div class="pop_inner">
+            <a href="#none" class="closebtn"><img src="./images/ico_close.png" alt="#none"></a>
+            <div class="pop_img">
+                <img src="./images/sub/sub02_menu12.png" alt="소금빵">
+            </div>
+            <div class="pop_detail">
+                <h3 class="new">소금빵</h3>
+                <p>풍부한 버터의 풍미와 소금의 짭짤한 맛이 잘 어울리는 빵</p>
+                <div class="sizecon">
+                    <dl>
+                        <dt>기본</dt>
+                        <dd>3,800원</dd>
+                    </dl>
+                    <dl>
+                        <dt>빅사이즈</dt>
+                        <dd>0원</dd>
+                    </dl>
+                </div>
+                <div class="itemInfo">
+                    <h4>제품영양정보</h4>
+                    <div class="tablestyle">
+                        <table>
+                            <tr>
+                                <th>영양정보</th>
+                                <th>기본</th>
+                                <th>빅사이즈</th>
+                                <th></th>
+                                <th>기본</th>
+                                <th>빅사이즈</th>
+                            </tr>
+                            <tr>
+                                <th>열량(kcal)</th>
+								<td>240</td>
+								<td>0.0</td>
+                                <th>나트륨(mg)</th>
+								<td>270</td>
+								<td>0.0</td>
+                            </tr>
+                            <tr>
+                                <th>포화지방(g)</th>
+								<td>6</td>
+								<td>0.0</td>
+                                <th>당류(g)</th>
+								<td>5</td>
+								<td>0.0</td>
+                            </tr>
+                            <tr>
+                                <th>단백질(g)</th>
+								<td>0.1</td>
+								<td>0.0</td>
+                                <th>카페인(mg)</th>
+								<td>0.0</td>
+								<td>0.0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<!-- 우유크림카스테라 자세히보기 팝업 -->
+	<div class="popup_con pop7">
+        <div class="pop_inner">
+            <a href="#none" class="closebtn"><img src="./images/ico_close.png" alt="#none"></a>
+            <div class="pop_img">
+                <img src="./images/sub/sub02_menu15.png" alt="우유크림카스테라">
+            </div>
+            <div class="pop_detail">
+                <h3 class="new">우유크림카스테라</h3>
+                <p>폭신하고 촉촉한 빵과
+					단짠 우유크림을 더 한 크림빵</p>
+                <div class="sizecon">
+                    <dl>
+                        <dt>기본</dt>
+                        <dd>4,000원</dd>
+                    </dl>
+                    <dl>
+                        <dt>빅사이즈</dt>
+                        <dd>0원</dd>
+                    </dl>
+                </div>
+                <div class="itemInfo">
+                    <h4>제품영양정보</h4>
+                    <div class="tablestyle">
+                        <table>
+                            <tr>
+                                <th>영양정보</th>
+                                <th>기본</th>
+                                <th>빅사이즈</th>
+                                <th></th>
+                                <th>기본</th>
+                                <th>빅사이즈</th>
+                            </tr>
+                            <tr>
+                                <th>열량(kcal)</th>
+								<td>700</td>
+								<td>0.0</td>
+                                <th>나트륨(mg)</th>
+								<td>520</td>
+								<td>0.0</td>
+                            </tr>
+                            <tr>
+                                <th>포화지방(g)</th>
+								<td>24</td>
+								<td>0.0</td>
+                                <th>당류(g)</th>
+								<td>28</td>
+								<td>0.0</td>
+                            </tr>
+                            <tr>
+                                <th>단백질(g)</th>
+								<td>12</td>
+								<td>0.0</td>
+                                <th>카페인(mg)</th>
+								<td>0.0</td>
+								<td>0.0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<!-- 솔티드카라멜마카롱 자세히보기 팝업 -->
+	<div class="popup_con pop8">
+        <div class="pop_inner">
+            <a href="#none" class="closebtn"><img src="./images/ico_close.png" alt="#none"></a>
+            <div class="pop_img">
+                <img src="./images/sub/sub02_menu18.png" alt="솔티드카라멜마카롱">
+            </div>
+            <div class="pop_detail">
+                <h3 class="new">솔티드카라멜마카롱</h3>
+                <p>달콤한 카라멜과 소금의 짭짤한 맛이 어우러지는 단짠단짠 마카롱</p>
+                <div class="sizecon">
+                    <dl>
+                        <dt>기본</dt>
+                        <dd>2,300원</dd>
+                    </dl>
+                    <dl>
+                        <dt>빅사이즈</dt>
+                        <dd>0원</dd>
+                    </dl>
+                </div>
+                <div class="itemInfo">
+                    <h4>제품영양정보</h4>
+                    <div class="tablestyle">
+                        <table>
+                            <tr>
+                                <th>영양정보</th>
+                                <th>기본</th>
+                                <th>빅사이즈</th>
+                                <th></th>
+                                <th>기본</th>
+                                <th>빅사이즈</th>
+                            </tr>
+                            <tr>
+                                <th>열량(kcal)</th>
+								<td>229</td>
+								<td>0.0</td>
+                                <th>나트륨(mg)</th>
+								<td>23</td>
+								<td>0.0</td>
+                            </tr>
+                            <tr>
+                                <th>포화지방(g)</th>
+								<td>9</td>
+								<td>0.0</td>
+                                <th>당류(g)</th>
+								<td>14</td>
+								<td>0.0</td>
+                            </tr>
+                            <tr>
+                                <th>단백질(g)</th>
+								<td>3</td>
+								<td>0.0</td>
+                                <th>카페인(mg)</th>
+								<td>0.0</td>
+								<td>0.0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+	<!-- 문구슬라이드 -->
+	<!-- 구문 -->
+	<div class="swiper-container flowslide">
+		<div class="flowslide_inner">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<p>Experience pure delight with every bite.</p>
+				</div>
+				<div class="swiper-slide">
+					<p>Experience pure delight with every bite.</p>
+				</div>
+				<div class="swiper-slide">
+					<p>Experience pure delight with every bite.</p>
+				</div>
+				<div class="swiper-slide">
+					<p>Experience pure delight with every bite.</p>
+				</div>
+				<div class="swiper-slide">
+					<p>Experience pure delight with every bite.</p>
+				</div>
+				<div class="swiper-slide">
+					<p>Experience pure delight with every bite.</p>
+				</div>
+				<div class="swiper-slide">
+					<p>Experience pure delight with every bite.</p>
+				</div>
+				<div class="swiper-slide">
+					<p>Experience pure delight with every bite.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- 브랜드스토리 -->
+	<div class="brand_banner">
+		<div class="brand_txt">
+
+			<h1><span class="highlight2">Brand</span></h1>
+			<h2>
+				Discover your <br>
+				perfect treat with <br>
+				our desserts.
+			</h2>
+			<p>
+				우리는 일상에서 소소한 행복과 즐거움을 찾고자 하는 모든 이들을 위한 브랜드입니다. <br>
+				새로운 맛으로 이루어진 디저트로 일상을 더욱 특별하게 만들어 드릴 것입니다.
+			</p>
+			<a href="./sub1.html" class="viewmore">
+				<span class="circle">View</span>
+				<span>more</span>
+			</a>
+			<img src="./images/main_brand_txt_circle.png" alt="로고원형" class="spin">
+		</div>
+		<div class="brand_img">
+		</div>
+	</div>
+
+
+	<!-- 광고배너 -->
+	<div class="ad_banner">
+		<div>
+			<img src="./images/ad_banner1.png" alt="출석체크배너">
+			<div class="black">
+				<p>매일매일 출석체크🍀✔️</p>
+			</div>
+		</div>
+		<div>
+			<img src="./images/ad_banner2.png" alt="룰렛배너">
+			<div class="black">
+				<p>하루에 한번! 도전 룰렛💗🎁</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- sns -->
+	<div class="sns">
+		<p>Follow</p><br>
+		<p>Our sweet feed</p>
+		<div class="sns_img1">
+			<div class="sns_hidden">
+				<img src="./images/sns1.png" alt="sns1">
+			</div>
+			<div class="sns_hidden mar">
+				<img src="./images/sns2.jpg" alt="sns2">
+			</div>
+			<div class="sns_hidden">
+				<img src="./images/sns3.jpg" alt="sns3">
+			</div>
+		</div>
+		<div class="sns_img2">
+			<h4>follow us @ sweetNsalty</h4>
+			<div class="sns_hidden mar">
+				<img src="./images/sns4.png" alt="sns4">
+			</div>
+			<div class="sns_hidden">
+				<img src="./images/sns5.png" alt="sns5">
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- 이벤트 -->
+	<div class="eventbanner">
+		<div data-aos="fade-down" data-aos-duration="3000" class="eventbanner_inner">
+			<a href="./sub7.html"><img src="./images/eventbanner.jpg" alt="이벤트배너"></a>
+		</div>
+	</div>
+
+
+
+
+	<!-- 푸터 -->
+	<div class="footer">
+		<div class="footer_in">
+			<div class="footer_left">
+				<img src="./images/footer_logo.png" alt="푸터로고1" class="spin2">
+				<p>Company / CEO : SS INTERNATIONAL CO. / Lee harin</p>
+				<p>Customer center : 1234-5678 (10:00-17:00)</p>
+				<p>© 2024 Sweet&Salty. All rights reserved.</p>
+			</div>
+			<div class="footer_right">
+				<ul>
+					<li><a href="./sub1.html">Brand</a></li>
+					<li><a href="./sub2.html">Menu</a></li>
+					<li><a href="./sub7.html">Event</a></li>
+					<li><a href="./sub8.html">Community</a></li>
+				</ul>
+				<img src="./images/footer_logo2.png" alt="푸터로고2">
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- 슬라이드 js -->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- aos 라이브러리 -->
+  <!-- 2. 내가 만든 소스 연결 -->
+  <script src="./js/index.js"></script>
+
+
+</body>
+
+</html>

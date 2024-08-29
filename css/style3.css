@@ -1,0 +1,416 @@
+@font-face {
+    font-family: 'NanumSquareNeoLight';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoExtraBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoHeavy';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoVariable';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.ttf) format("truetype");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    min-width: 1320px;
+    background-color: #FFF9DB;
+}
+
+/* 헤더 */
+.header {
+    width: 100%;
+    background-color: #FFFCEE;
+    z-index: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header_in {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_in img {
+    display: block;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #3b72a8;
+}
+
+.nav>li>a {
+    display: block;
+    padding: 30px;
+    position: relative;
+}
+
+/* 서브메뉴 꾸미기 */
+.sub {
+    position: absolute;
+    width: 100%;
+    display: none;
+    z-index: 100;
+}
+
+.nav>li {
+    position: relative;
+}
+
+.sub a {
+    font-size: 17px;
+    font-family: 'NanumSquareNeo';
+    font-weight: 700;
+    display: block;
+    background-color: #3b72a8;
+    color: #FFFCEE;
+    padding-top: 30px;
+    text-align: center;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+
+}
+
+
+.sub a:hover {
+    color: #fff4bb;
+}
+
+
+
+/* 서브메뉴 배경 꾸미기 */
+.nav .sub_bg {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: #3b72a8;
+    left: 0;
+    top: 92px;
+    display: none;
+}
+
+.solid {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    height: 7px;
+    background: #fff0a5;
+    transform: scaleX(0);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav>li>a:hover .solid {
+    transform: scaleX(1);
+}
+
+
+
+/* 서브메뉴 보이게 하기 
+.nav li:hover .sub{
+    display: block;
+}*/
+
+
+
+/* 상단배너 */
+.hyperbanner img {
+    margin-top: 92px;
+    width: 100%;
+    display: block;
+    min-width: 1320px;
+}
+
+
+
+
+/* 메뉴박스 */
+
+.menubox {
+    width: 1320px;
+    margin: auto;
+    margin-bottom: 230px;
+}
+
+.menubox h1 {
+    text-align: center;
+    padding: 130px 0 80px 0;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    color: #3b72a8;
+    font-size: 36px;
+}
+
+
+.highlight2 {
+    background: linear-gradient(to right, #3b72a8 50%, transparent 50%) 100% 0;
+    background-size: 200%;
+    transition: all 1s;
+}
+
+.on2 {
+    background-position-x: 0;
+    color: #FFFCEE;
+    padding: 0 7px;
+}
+
+/* 메뉴버튼 */
+.menu_button {
+    margin-bottom: 190px;
+}
+
+.menu_button ul {
+    display: flex;
+    justify-content: center;
+}
+
+.menu_button li {
+    margin: 0 15px;
+    border-radius: 52px;
+    padding: 10px 20px;
+    background-color: #3B72A8;
+    position: relative;
+}
+
+.menu_button a {
+    font-size: 23px;
+    font-family: 'NanumSquareNeoExtraBold';
+    color: #FFFBEE;
+}
+
+.menu_button a:hover {
+    color: #3B72A8;
+}
+
+.menu_button a:hover .btn-bubble-item{
+    top: 0;
+    transform: scale(4, 3);
+}
+
+.menu_button b{
+    position: relative;
+    z-index: 2;
+}
+
+.btn-bubble-inner {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 52px;
+}
+
+.btn-bubble-itembox {
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+.btn-bubble-item {
+    border-radius: 100%;
+    position: absolute;
+    top: 100%;
+    width: 60%;
+    height: 100%;
+    background: #ffcfd9;
+    transition: 1s;
+} 
+
+.btn-bubble-item:nth-child(1){
+    left: 0;
+    transition-delay: 0s;
+}
+
+.btn-bubble-item:nth-child(2){
+    left: 30%;
+    transition-delay: 0.08s;
+}
+
+.btn-bubble-item:nth-child(3){
+    left: 60%;
+    transition-delay: 0.16s;
+}
+
+.btn-bubble-item:nth-child(4){
+    left: 90%;
+    transition-delay: 0.24s;
+}
+/* -- 메뉴버튼 끝 -- */
+
+
+
+/* 메뉴 라인업 */
+
+.menu_list ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu_list_box{
+    background: #fff url(../images/sub/sub02_tag_prd_type.png) no-repeat center 16.2%;
+    width: 390px;
+    height: 390px;
+    border-radius: 30px;
+    text-align: center;
+    align-content: center;
+    margin: 40px 0;
+    
+}
+
+.menu_list_box p{
+    font-size: 22px;
+    font-family: 'NanumSquareNeoExtraBold';
+    color: #363636;
+    padding-bottom: 10px;
+}
+
+.menu_list_box h2{
+    font-size: 13px;
+    color: #FFF9DB;
+    font-family: "Dela Gothic One", sans-serif;
+
+    font-weight: 400;
+}
+
+.menu_img{
+    padding-top: 18px;
+    transition: 0.6s;
+}
+
+.menuline{
+    padding-top: 15px;
+}
+
+.menu_list li:hover .menu_img{
+    transform: scale(1.15);
+}
+
+
+
+
+
+
+/* 내용경계선 */
+.boundary {
+    display: block;
+    width: 100%;
+    min-width: 1320px;
+}
+
+/* 푸터 */
+.footer {
+    background: #FFFCEE;
+}
+
+.footer_in {
+    margin: auto;
+    width: 1320px;
+    padding: 100px 0 90px 0;
+    display: flex;
+}
+
+.footer p,
+.footer a {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 14px;
+    color: #3b72a8;
+}
+
+.footer_left img {
+    float: left;
+    margin-right: 59px;
+}
+
+.footer_left p {
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.footer_right li {
+    float: left;
+    margin-left: 30px;
+}
+
+.footer_right {
+    margin-left: 361px;
+}
+
+.footer_right img {
+    float: right;
+    padding-top: 30px;
+}
+
+.footer_right a:hover {
+    color: #4891da;
+}
+
+.spin2 {
+    animation: circle 4.5s infinite linear;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
